@@ -1,4 +1,4 @@
-# flutter_application_1
+# APP_Characters
 
 A new Flutter project.
 

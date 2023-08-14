@@ -1,4 +1,4 @@
-import 'package:APP_Characters/presentation/screens/counter/counter_screen.dart';
+import 'package:APP_Characters/presentation/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor:
             const Color(0xFF0D0118), // Establece el color de fondo global aquí
       ),
-      home: const CounterScreen(),
+      home: const Home(),
     );
   }
 }
