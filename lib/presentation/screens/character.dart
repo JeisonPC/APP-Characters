@@ -8,21 +8,29 @@ class CharacterDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(characterData['name']),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.network(characterData['image']),
-            Text(
-              characterData['name'],
-              style: TextStyle(fontSize: 24),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            height: 400,
+            padding: EdgeInsets.zero,
+            child: Image.network(
+              characterData['image'],
+              fit: BoxFit.cover,
             ),
-            // Agrega más detalles del personaje si es necesario
-          ],
-        ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              characterData['name'],
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          // Agrega más detalles del personaje si es necesario
+        ],
       ),
     );
   }
